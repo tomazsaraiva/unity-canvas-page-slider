@@ -14,7 +14,7 @@ using UnityEditor;
 
 namespace TS.PageViewer
 {
-    public class PageViewer : MonoBehaviour
+    public class PageSlider : MonoBehaviour
     {
         #region Variables
 
@@ -120,18 +120,18 @@ namespace TS.PageViewer
 
 #if UNITY_EDITOR
 
-        [CustomEditor(typeof(PageViewer))]
+        [CustomEditor(typeof(PageSlider))]
         public class PageControllerEditor : Editor
         {
             #region Variables
 
-            private PageViewer _target;
+            private PageSlider _target;
 
             #endregion
 
             private void OnEnable()
             {
-                _target = (PageViewer)target;
+                _target = (PageSlider)target;
             }
             public override void OnInspectorGUI()
             {
