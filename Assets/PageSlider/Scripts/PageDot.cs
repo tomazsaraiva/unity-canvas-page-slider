@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 #endregion
 
-namespace TS.PageViewer
+namespace TS.PageSlider
 {
     public class PageDot : MonoBehaviour
     {
@@ -17,6 +17,11 @@ namespace TS.PageViewer
         public int Index { get; set; }
 
         #endregion
+
+        private void Start()
+        {
+            ChangeActiveState(Index == 0);
+        }
 
         public virtual void ChangeActiveState(bool active)
         {

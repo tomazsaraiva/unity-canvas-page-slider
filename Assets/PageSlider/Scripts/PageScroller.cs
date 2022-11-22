@@ -7,7 +7,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 #endregion
 
-namespace TS.PageViewer
+namespace TS.PageSlider
 {
     public class PageScroller : MonoBehaviour, IBeginDragHandler, IEndDragHandler
     {

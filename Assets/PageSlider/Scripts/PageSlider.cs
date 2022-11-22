@@ -6,13 +6,14 @@ using UnityEngine.UIElements;
 using System;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 #endregion
 
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
 
-namespace TS.PageViewer
+namespace TS.PageSlider
 {
     public class PageSlider : MonoBehaviour
     {
@@ -22,10 +23,10 @@ namespace TS.PageViewer
         [SerializeField] private PageDotsIndicator _dotsIndicator;
 
         [Header("Children")]
-        [SerializeField] private List<PageView> _pages;
+        [SerializeField] private List<PageContainer> _pages;
 
         [Header("Events")]
-        public UnityEvent<PageView> OnPageChanged;
+        public UnityEvent<PageContainer> OnPageChanged;
 
         public Rect Rect { get { return ((RectTransform)transform).rect; } }
 
@@ -45,22 +46,28 @@ namespace TS.PageViewer
 
         public void AddPage(RectTransform content)
         {
-#if UNITY_EDITOR
             if (_scroller == null)
             {
                 _scroller = FindScroller();
             }
-#endif
 
-            var page = new GameObject(string.Format("Page_{0}", _pages.Count), typeof(RectTransform), typeof(PageView));
+            _pages ??= new List<PageContainer>();
+
+            var page = new GameObject(string.Format("Page_{0}", _pages.Count), typeof(RectTransform), typeof(PageContainer));
             page.transform.SetParent(_scroller.Content);
 
             var rectTransform = page.GetComponent<RectTransform>();
             rectTransform.sizeDelta = _scroller.Rect.size;
             rectTransform.localScale = Vector3.one;
 
-            var pageView = page.GetComponent<PageView>();
+            var pageView = page.GetComponent<PageContainer>();
             pageView.AssignContent(content);
+
+            if(_pages.Count == 0)
+            {
+                pageView.ChangingToActiveState();
+                pageView.ChangeActiveState(true);
+            }
 
             _pages.Add(pageView);
 
@@ -71,6 +78,7 @@ namespace TS.PageViewer
             }
 
 #if UNITY_EDITOR
+            if(Application.isPlaying) { return; }
             EditorUtility.SetDirty(this);
 #endif
         }
@@ -78,10 +86,11 @@ namespace TS.PageViewer
         {
             for (int i = 0; i < _pages.Count; i++)
             {
+                if (_pages[i] == null) { continue; }
 #if UNITY_EDITOR
                 DestroyImmediate(_pages[i].gameObject);
 #else
-            Destroy(_pages[i].gameObject);
+                Destroy(_pages[i].gameObject);
 #endif
             }
             _pages.Clear();
@@ -113,9 +122,8 @@ namespace TS.PageViewer
             {
                 Debug.LogError("Missing PageScroller in Children");
             }
-
-            return scroller;
 #endif
+            return scroller;
         }
 
 #if UNITY_EDITOR
@@ -126,6 +134,7 @@ namespace TS.PageViewer
             #region Variables
 
             private PageSlider _target;
+            private RectTransform _contentPrefab;
 
             #endregion
 
@@ -140,9 +149,10 @@ namespace TS.PageViewer
                 EditorGUILayout.Space();
                 EditorGUILayout.LabelField("Editor");
 
+                _contentPrefab = (RectTransform)EditorGUILayout.ObjectField(_contentPrefab, typeof(RectTransform), false);
                 if (GUILayout.Button("Add Page"))
                 {
-                    _target.AddPage(null);
+                    _target.AddPage((RectTransform)PrefabUtility.InstantiatePrefab(_contentPrefab));
                 }
                 if (GUILayout.Button("Clear"))
                 {

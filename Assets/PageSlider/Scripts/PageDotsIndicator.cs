@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using UnityEditor;
 #endif
 
-namespace TS.PageViewer
+namespace TS.PageSlider
 {
     public class PageDotsIndicator : MonoBehaviour
     {
@@ -33,13 +33,26 @@ namespace TS.PageViewer
 
         public void Add()
         {
-            var dot = Instantiate(_prefab, transform);
+            PageDot dot = null;
+
+#if UNITY_EDITOR
+            if(!Application.isPlaying)
+            {
+                dot = (PageDot)PrefabUtility.InstantiatePrefab(_prefab, transform);
+            }
+#endif
+            if(dot == null)
+            {
+                dot = Instantiate(_prefab, transform);
+            }
+
             dot.Index = _dots.Count;
             dot.ChangeActiveState(_dots.Count == 0);
 
             _dots.Add(dot);
 
 #if UNITY_EDITOR
+            if (Application.isPlaying) { return; }
             EditorUtility.SetDirty(this);
 #endif
         }
@@ -47,13 +60,19 @@ namespace TS.PageViewer
         {
             for (int i = 0; i < _dots.Count; i++)
             {
+                if (_dots[i] == null) { continue; }
 #if UNITY_EDITOR
                 DestroyImmediate(_dots[i].gameObject);
 #else
-            Destroy(_dots[i].gameObject);
+                Destroy(_dots[i].gameObject);
 #endif
             }
+
             _dots.Clear();
+
+#if UNITY_EDITOR
+            EditorUtility.SetDirty(this);
+#endif
         }
 
         public void ChangeActiveDot(int fromIndex, int toIndex)
@@ -67,11 +86,11 @@ namespace TS.PageViewer
         [CustomEditor(typeof(PageDotsIndicator))]
         public class PageDotsIndicatorEditor : Editor
         {
-            #region Variables
+#region Variables
 
             private PageDotsIndicator _target;
 
-            #endregion
+#endregion
 
             private void OnEnable()
             {
