@@ -1,12 +1,7 @@
 #region Includes
 using UnityEngine;
-using UnityEngine.EventSystems;
-using UnityEngine.UI;
-using UnityEngine.UIElements;
-using System;
 using UnityEngine.Events;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 #endregion
 
 #if UNITY_EDITOR
@@ -63,7 +58,7 @@ namespace TS.PageSlider
             var pageView = page.GetComponent<PageContainer>();
             pageView.AssignContent(content);
 
-            if(_pages.Count == 0)
+            if (_pages.Count == 0)
             {
                 pageView.ChangingToActiveState();
                 pageView.ChangeActiveState(true);
@@ -78,7 +73,7 @@ namespace TS.PageSlider
             }
 
 #if UNITY_EDITOR
-            if(Application.isPlaying) { return; }
+            if (Application.isPlaying) { return; }
             EditorUtility.SetDirty(this);
 #endif
         }
