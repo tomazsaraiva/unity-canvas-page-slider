@@ -75,26 +75,37 @@ namespace TS.PageSlider
                 _scroller = FindScroller();
             }
 
+            // Initialize the pages list if it's null (first page).
             _pages ??= new List<PageContainer>();
 
+            // Create a new GameObject for the page with a descriptive name.
+            // Set the page's parent to the scroller's content transform.
             var page = new GameObject(string.Format("Page_{0}", _pages.Count), typeof(RectTransform), typeof(PageContainer));
             page.transform.SetParent(_scroller.Content);
 
+            // Get the RectTransform component of the newly created page.
+            // Set the size of the page's RectTransform to match the size of the scroller's viewport.
+            // Set the page's local scale to one (no scaling).
             var rectTransform = page.GetComponent<RectTransform>();
             rectTransform.sizeDelta = _scroller.Rect.size;
             rectTransform.localScale = Vector3.one;
 
+            // Get the PageContainer component from the page GameObject.
+            // Assign the provided content (RectTransform) to the PageContainer.
             var pageView = page.GetComponent<PageContainer>();
             pageView.AssignContent(content);
 
+            // If this is the first page, trigger its activation state change.
             if (_pages.Count == 0)
             {
                 pageView.ChangingToActiveState();
                 pageView.ChangeActiveState(true);
             }
 
+            // Add the newly created page container to the internal list.
             _pages.Add(pageView);
 
+            // If a dots indicator is assigned, add a new dot and update its visibility based on the number of pages.
             if (_dotsIndicator != null)
             {
                 _dotsIndicator.Add();
@@ -102,6 +113,7 @@ namespace TS.PageSlider
             }
 
 #if UNITY_EDITOR
+            // In editor mode, mark the scene as dirty to save changes.
             if (Application.isPlaying) { return; }
             EditorUtility.SetDirty(this);
 #endif
