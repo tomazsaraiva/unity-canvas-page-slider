@@ -53,6 +53,15 @@ namespace TS.PageSlider
 
         #endregion
 
+        private void Awake()
+        {
+            if (_dots.Count == 0) return;
+            for (int i = 0; i < _dots.Count; i++)
+            {
+                _dots[i].ChangeActiveState(i == 0);
+            }
+        }
+
         /// <summary>
         /// Adds a new page dot indicator to the collection.
         /// </summary>
@@ -75,7 +84,7 @@ namespace TS.PageSlider
             }
 
             dot.Index = _dots.Count;
-            dot.ChangeActiveState(dot.Index == 0); // Select the first dot.
+            dot.ChangeActiveState(_dots.Count == 0); // Activate the first dot.
 
             _dots.Add(dot);
 
