@@ -1,9 +1,10 @@
 #region Includes
-using UnityEditor;
-
 using UnityEngine;
-using UnityEngine.Events;
 #endregion
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif
 
 namespace TS.PageSlider
 {
