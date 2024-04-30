@@ -90,7 +90,10 @@ namespace TS.PageSlider
             }
             _pages.Clear();
 
-            _dotsIndicator?.Clear();
+            if (_dotsIndicator != null)
+            {
+                _dotsIndicator.Clear();
+            }
         }
 
         private void PageScroller_PageChangeStarted(int fromIndex, int toIndex)
@@ -103,7 +106,10 @@ namespace TS.PageSlider
             _pages[fromIndex].ChangeActiveState(false);
             _pages[toIndex].ChangeActiveState(true);
 
-            _dotsIndicator?.ChangeActiveDot(fromIndex, toIndex);
+            if (_dotsIndicator != null)
+            {
+                _dotsIndicator.ChangeActiveDot(fromIndex, toIndex);
+            }
 
             OnPageChanged?.Invoke(_pages[toIndex]);
         }
