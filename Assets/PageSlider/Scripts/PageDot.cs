@@ -1,19 +1,43 @@
 #region Includes
+using UnityEditor.EditorTools;
 using UnityEngine;
 using UnityEngine.Events;
 #endregion
 
 namespace TS.PageSlider
 {
+    /// <summary>
+    /// This class represents a single dot indicator used for navigation in a paginated view.
+    /// It provides properties for its active state and index, and events for state changes and presses.
+    /// </summary>
     public class PageDot : MonoBehaviour
     {
         #region Variables
 
         [Header("Events")]
+
+        /// <summary>
+        /// UnityEvent with a boolean parameter that is invoked when the active state of the dot changes.
+        /// The parameter is True if the dot becomes active, False if it becomes inactive.
+        /// </summary>
+        [Tooltip("Invoked when the active state of the dot changes: True if active, False if inactive")]
         public UnityEvent<bool> OnActiveStateChanged;
+
+        /// <summary>
+        /// UnityEvent with an integer parameter that is invoked when the dot is pressed.
+        /// The parameter represents the index of the pressed dot.
+        /// </summary>
+        [Tooltip("Invoked when the dot is pressed with it's index")]
         public UnityEvent<int> OnPressed;
 
+        /// <summary>
+        /// Gets the active state of the page dot.
+        /// </summary>
         public bool IsActive { get; private set; }
+
+        /// <summary>
+        /// Gets or sets the index of the page dot within the paginated view.
+        /// </summary>
         public int Index { get; set; }
 
         #endregion
@@ -26,12 +50,20 @@ namespace TS.PageSlider
             ChangeActiveState(IsActive);
         }
 
+        /// <summary>
+        /// Changes the active state of the page dot and invokes the OnActiveStateChanged event.
+        /// </summary>
+        /// <param name="active">True to set the dot active, False to set it inactive.</param>
         public virtual void ChangeActiveState(bool active)
         {
             IsActive = active;
 
             OnActiveStateChanged?.Invoke(active);
         }
+
+        /// <summary>
+        /// Invokes the OnPressed event with the dot's index when the dot is pressed.
+        /// </summary>
         public void Press()
         {
             OnPressed?.Invoke(Index);
