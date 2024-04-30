@@ -20,7 +20,10 @@ namespace TS.PageSlider
 
         private void Start()
         {
-            ChangeActiveState(Index == 0);
+            // HACK: Ideally the dot shouldn't change it's state.
+            // But the second dot was always active and I don't know why.
+            // So I'm forcing the dot to update it's state on Start.
+            ChangeActiveState(IsActive);
         }
 
         public virtual void ChangeActiveState(bool active)
