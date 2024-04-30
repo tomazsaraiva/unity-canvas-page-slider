@@ -364,7 +364,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e4aea5caae3cf445ba353ebd392a3c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 295e6eb8c128dd346b35d6b4fe2578da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &963194225
@@ -589,7 +589,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e4aea5caae3cf445ba353ebd392a3c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 295e6eb8c128dd346b35d6b4fe2578da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1411675936
@@ -750,7 +750,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb8fd652ad709d48b1f8c48e20a3b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _content: {fileID: 1472966952}
+  _page: {fileID: 1472966952}
 --- !u!1001 &1472966950
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -873,7 +873,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e4aea5caae3cf445ba353ebd392a3c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 295e6eb8c128dd346b35d6b4fe2578da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1496856994
@@ -1140,7 +1140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb8fd652ad709d48b1f8c48e20a3b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _content: {fileID: 547443082}
+  _page: {fileID: 547443082}
 --- !u!1 &1753993053
 GameObject:
   m_ObjectHideFlags: 0
@@ -1259,7 +1259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb8fd652ad709d48b1f8c48e20a3b54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _content: {fileID: 1306523085}
+  _page: {fileID: 1306523085}
 --- !u!1001 &2230961183580555040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1410,6 +1410,14 @@ PrefabInstance:
     - target: {fileID: 2230961183693669847, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_HorizontalScrollbar
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230961183693669850, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
+      propertyPath: _minDeltaDrag
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2230961183693669850, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
+      propertyPath: _snapDuration
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
