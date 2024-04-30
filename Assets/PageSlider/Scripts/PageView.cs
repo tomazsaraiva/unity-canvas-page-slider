@@ -1,6 +1,4 @@
 #region Includes
-using System;
-
 using UnityEngine;
 using UnityEngine.Events;
 #endregion
