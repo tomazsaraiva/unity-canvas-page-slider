@@ -75,7 +75,7 @@ namespace TS.PageSlider
             }
 
             dot.Index = _dots.Count;
-            dot.ChangeActiveState(_dots.Count == 0); // Set active state for the first dot.
+            dot.ChangeActiveState(dot.Index == 0); // Select the first dot.
 
             _dots.Add(dot);
 
