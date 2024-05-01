@@ -130,6 +130,15 @@ namespace TS.PageSlider
             }
         }
 
+        public void SetPage(int index)
+        {
+            _scrollRect.horizontalNormalizedPosition = GetTargetPagePosition(index);
+
+            _targetPage = index;
+            _currentPage = index;
+            OnPageChangeEnded?.Invoke(0, _currentPage);
+        }
+
         public void OnBeginDrag(PointerEventData eventData)
         {
             // Store the starting normalized position of the scroll bar.
@@ -210,7 +219,7 @@ namespace TS.PageSlider
         private void ScrollToPage(int page)
         {
             // Calculate the target normalized position for the scroll rect based on the target page index.
-            _targetNormalizedPosition = page * (1f / GetPageCount());
+            _targetNormalizedPosition = GetTargetPagePosition(page);
 
             // Calculate the speed required to reach the target position within the snap duration.
             _moveSpeed = (_targetNormalizedPosition - _scrollRect.horizontalNormalizedPosition) / _snapDuration;
@@ -236,6 +245,12 @@ namespace TS.PageSlider
             var rectWidth = ((RectTransform)_scrollRect.transform).rect.size.x;
             return Mathf.RoundToInt(contentWidth / rectWidth) - 1;
         }
+
+        private float GetTargetPagePosition(int page)
+        {
+            return page * (1f / GetPageCount());
+        }
+
         private ScrollRect FindScrollRect()
         {
             var scrollRect = GetComponentInChildren<ScrollRect>();

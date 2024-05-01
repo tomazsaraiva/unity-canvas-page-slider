@@ -2,6 +2,8 @@
 using UnityEngine;
 using UnityEngine.Events;
 using System.Collections.Generic;
+using System.Collections;
+
 #endregion
 
 #if UNITY_EDITOR
@@ -35,6 +37,13 @@ namespace TS.PageSlider
         [Tooltip("A list of PageContainer components representing the pages managed by the PageSlider")]
         [SerializeField] private List<PageContainer> _pages;
 
+        [Header("Configuration")]
+        /// <summary>
+        /// The index of the page to show at start.
+        /// </summary>
+        [Tooltip("The index of the page to show at start")]
+        [SerializeField] private int _startPageIndex;
+
         [Header("Events")]
 
         /// <summary>
@@ -56,10 +65,15 @@ namespace TS.PageSlider
         {
             _scroller = FindScroller();
         }
-        private void Start()
+        private IEnumerator Start()
         {
             _scroller.OnPageChangeStarted.AddListener(PageScroller_PageChangeStarted);
             _scroller.OnPageChangeEnded.AddListener(PageScroller_PageChangeEnded);
+
+            yield return new WaitForEndOfFrame();
+
+            if (_startPageIndex == 0) yield break;
+            _scroller.SetPage(_startPageIndex);
         }
 
 
