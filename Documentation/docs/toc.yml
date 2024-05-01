@@ -1,4 +1,6 @@
-- name: Introduction
-  href: introduction.md
 - name: Getting Started
   href: getting-started.md
+- name: Setup (Editor)
+  href: setup-editor.md
+- name: Setup (Runtime)
+  href: setup-runtime.md
