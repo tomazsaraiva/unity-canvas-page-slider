@@ -1,0 +1,233 @@
+### YamlMime:ManagedReference
+items:
+- uid: TS.PageSlider.PageContainer
+  commentId: T:TS.PageSlider.PageContainer
+  id: PageContainer
+  parent: TS.PageSlider
+  children:
+  - TS.PageSlider.PageContainer.AssignContent(RectTransform)
+  - TS.PageSlider.PageContainer.ChangeActiveState(System.Boolean)
+  - TS.PageSlider.PageContainer.ChangingToActiveState
+  - TS.PageSlider.PageContainer.ChangingToInactiveState
+  langs:
+  - csharp
+  - vb
+  name: PageContainer
+  nameWithType: PageContainer
+  fullName: TS.PageSlider.PageContainer
+  type: Class
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageContainer.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: PageContainer
+    path: ../Assets/PageSlider/Scripts/PageContainer.cs
+    startLine: 14
+  namespace: TS.PageSlider
+  summary: >-
+    This class represents a container for a page in a paginated view.
+
+    It handles assigning content to the container and manages the active state of the contained page.
+  example: []
+  syntax:
+    content: 'public class PageContainer : MonoBehaviour'
+    content.vb: Public Class PageContainer Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: TS.PageSlider.PageContainer.AssignContent(RectTransform)
+  commentId: M:TS.PageSlider.PageContainer.AssignContent(RectTransform)
+  id: AssignContent(RectTransform)
+  parent: TS.PageSlider.PageContainer
+  langs:
+  - csharp
+  - vb
+  name: AssignContent(RectTransform)
+  nameWithType: PageContainer.AssignContent(RectTransform)
+  fullName: TS.PageSlider.PageContainer.AssignContent(RectTransform)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageContainer.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: AssignContent
+    path: ../Assets/PageSlider/Scripts/PageContainer.cs
+    startLine: 34
+  namespace: TS.PageSlider
+  summary: >-
+    Assigns content (RectTransform) to this container.
+
+    If no content is provided, it creates a new GameObject with a RectTransform and a PageView component.
+
+    The assigned content is then parented to this container and its properties are set to ensure proper positioning and scaling.
+  example: []
+  syntax:
+    content: public void AssignContent(RectTransform content)
+    parameters:
+    - id: content
+      type: RectTransform
+      description: The RectTransform representing the content to be assigned.
+    content.vb: Public Sub AssignContent(content As RectTransform)
+  overload: TS.PageSlider.PageContainer.AssignContent*
+- uid: TS.PageSlider.PageContainer.ChangingToActiveState
+  commentId: M:TS.PageSlider.PageContainer.ChangingToActiveState
+  id: ChangingToActiveState
+  parent: TS.PageSlider.PageContainer
+  langs:
+  - csharp
+  - vb
+  name: ChangingToActiveState()
+  nameWithType: PageContainer.ChangingToActiveState()
+  fullName: TS.PageSlider.PageContainer.ChangingToActiveState()
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageContainer.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: ChangingToActiveState
+    path: ../Assets/PageSlider/Scripts/PageContainer.cs
+    startLine: 64
+  namespace: TS.PageSlider
+  summary: >-
+    Calls the ChangingToActiveState method on the contained PageView component,
+
+    to signal a transition to an active state.
+  example: []
+  syntax:
+    content: public void ChangingToActiveState()
+    content.vb: Public Sub ChangingToActiveState()
+  overload: TS.PageSlider.PageContainer.ChangingToActiveState*
+- uid: TS.PageSlider.PageContainer.ChangingToInactiveState
+  commentId: M:TS.PageSlider.PageContainer.ChangingToInactiveState
+  id: ChangingToInactiveState
+  parent: TS.PageSlider.PageContainer
+  langs:
+  - csharp
+  - vb
+  name: ChangingToInactiveState()
+  nameWithType: PageContainer.ChangingToInactiveState()
+  fullName: TS.PageSlider.PageContainer.ChangingToInactiveState()
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageContainer.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: ChangingToInactiveState
+    path: ../Assets/PageSlider/Scripts/PageContainer.cs
+    startLine: 73
+  namespace: TS.PageSlider
+  summary: >-
+    Calls the ChangingToInactiveState method on the contained PageView component,
+
+    to signal a transition to an inactive state.
+  example: []
+  syntax:
+    content: public void ChangingToInactiveState()
+    content.vb: Public Sub ChangingToInactiveState()
+  overload: TS.PageSlider.PageContainer.ChangingToInactiveState*
+- uid: TS.PageSlider.PageContainer.ChangeActiveState(System.Boolean)
+  commentId: M:TS.PageSlider.PageContainer.ChangeActiveState(System.Boolean)
+  id: ChangeActiveState(System.Boolean)
+  parent: TS.PageSlider.PageContainer
+  langs:
+  - csharp
+  - vb
+  name: ChangeActiveState(bool)
+  nameWithType: PageContainer.ChangeActiveState(bool)
+  fullName: TS.PageSlider.PageContainer.ChangeActiveState(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageContainer.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: ChangeActiveState
+    path: ../Assets/PageSlider/Scripts/PageContainer.cs
+    startLine: 82
+  namespace: TS.PageSlider
+  summary: Calls the ChangeActiveState method on the contained PageView component with the provided active state.
+  example: []
+  syntax:
+    content: public void ChangeActiveState(bool active)
+    parameters:
+    - id: active
+      type: System.Boolean
+      description: True to set the page to active, False to set it to inactive.
+    content.vb: Public Sub ChangeActiveState(active As Boolean)
+  overload: TS.PageSlider.PageContainer.ChangeActiveState*
+  nameWithType.vb: PageContainer.ChangeActiveState(Boolean)
+  fullName.vb: TS.PageSlider.PageContainer.ChangeActiveState(Boolean)
+  name.vb: ChangeActiveState(Boolean)
+references:
+- uid: TS.PageSlider
+  commentId: N:TS.PageSlider
+  href: TS.html
+  name: TS.PageSlider
+  nameWithType: TS.PageSlider
+  fullName: TS.PageSlider
+  spec.csharp:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+  spec.vb:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+- uid: TS.PageSlider.PageContainer.AssignContent*
+  commentId: Overload:TS.PageSlider.PageContainer.AssignContent
+  href: TS.PageSlider.PageContainer.html#TS_PageSlider_PageContainer_AssignContent_RectTransform_
+  name: AssignContent
+  nameWithType: PageContainer.AssignContent
+  fullName: TS.PageSlider.PageContainer.AssignContent
+- uid: RectTransform
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: TS.PageSlider.PageContainer.ChangingToActiveState*
+  commentId: Overload:TS.PageSlider.PageContainer.ChangingToActiveState
+  href: TS.PageSlider.PageContainer.html#TS_PageSlider_PageContainer_ChangingToActiveState
+  name: ChangingToActiveState
+  nameWithType: PageContainer.ChangingToActiveState
+  fullName: TS.PageSlider.PageContainer.ChangingToActiveState
+- uid: TS.PageSlider.PageContainer.ChangingToInactiveState*
+  commentId: Overload:TS.PageSlider.PageContainer.ChangingToInactiveState
+  href: TS.PageSlider.PageContainer.html#TS_PageSlider_PageContainer_ChangingToInactiveState
+  name: ChangingToInactiveState
+  nameWithType: PageContainer.ChangingToInactiveState
+  fullName: TS.PageSlider.PageContainer.ChangingToInactiveState
+- uid: TS.PageSlider.PageContainer.ChangeActiveState*
+  commentId: Overload:TS.PageSlider.PageContainer.ChangeActiveState
+  href: TS.PageSlider.PageContainer.html#TS_PageSlider_PageContainer_ChangeActiveState_System_Boolean_
+  name: ChangeActiveState
+  nameWithType: PageContainer.ChangeActiveState
+  fullName: TS.PageSlider.PageContainer.ChangeActiveState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

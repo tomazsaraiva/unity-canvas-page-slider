@@ -60,3 +60,6 @@ crashlytics-build.properties
 
 .vscode
 UserSettings
+
+# docfx
+_site/

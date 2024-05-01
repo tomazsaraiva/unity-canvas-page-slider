@@ -1,0 +1,257 @@
+### YamlMime:ManagedReference
+items:
+- uid: TS.PageSlider.PageSlider
+  commentId: T:TS.PageSlider.PageSlider
+  id: PageSlider
+  parent: TS.PageSlider
+  children:
+  - TS.PageSlider.PageSlider.AddPage(RectTransform)
+  - TS.PageSlider.PageSlider.Clear
+  - TS.PageSlider.PageSlider.OnPageChanged
+  - TS.PageSlider.PageSlider.Rect
+  langs:
+  - csharp
+  - vb
+  name: PageSlider
+  nameWithType: PageSlider
+  fullName: TS.PageSlider.PageSlider
+  type: Class
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageSlider.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: PageSlider
+    path: ../Assets/PageSlider/Scripts/PageSlider.cs
+    startLine: 19
+  namespace: TS.PageSlider
+  summary: >-
+    The PageSlider class manages a collection of pages within a PageScroller component. 
+
+    It provides functionality for adding, removing, and keeping track of pages, 
+
+    as well as handling page change events.
+  example: []
+  syntax:
+    content: 'public class PageSlider : MonoBehaviour'
+    content.vb: Public Class PageSlider Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+- uid: TS.PageSlider.PageSlider.OnPageChanged
+  commentId: F:TS.PageSlider.PageSlider.OnPageChanged
+  id: OnPageChanged
+  parent: TS.PageSlider.PageSlider
+  langs:
+  - csharp
+  - vb
+  name: OnPageChanged
+  nameWithType: PageSlider.OnPageChanged
+  fullName: TS.PageSlider.PageSlider.OnPageChanged
+  type: Field
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageSlider.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: OnPageChanged
+    path: ../Assets/PageSlider/Scripts/PageSlider.cs
+    startLine: 52
+  namespace: TS.PageSlider
+  syntax:
+    content: public UnityEvent<PageContainer> OnPageChanged
+    return:
+      type: UnityEvent{TS.PageSlider.PageContainer}
+    content.vb: Public OnPageChanged As UnityEvent(Of PageContainer)
+- uid: TS.PageSlider.PageSlider.Rect
+  commentId: P:TS.PageSlider.PageSlider.Rect
+  id: Rect
+  parent: TS.PageSlider.PageSlider
+  langs:
+  - csharp
+  - vb
+  name: Rect
+  nameWithType: PageSlider.Rect
+  fullName: TS.PageSlider.PageSlider.Rect
+  type: Property
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageSlider.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: Rect
+    path: ../Assets/PageSlider/Scripts/PageSlider.cs
+    startLine: 57
+  namespace: TS.PageSlider
+  summary: Gets the rectangle of the PageSlider component.
+  example: []
+  syntax:
+    content: public Rect Rect { get; }
+    parameters: []
+    return:
+      type: Rect
+    content.vb: Public ReadOnly Property Rect As Rect
+  overload: TS.PageSlider.PageSlider.Rect*
+- uid: TS.PageSlider.PageSlider.AddPage(RectTransform)
+  commentId: M:TS.PageSlider.PageSlider.AddPage(RectTransform)
+  id: AddPage(RectTransform)
+  parent: TS.PageSlider.PageSlider
+  langs:
+  - csharp
+  - vb
+  name: AddPage(RectTransform)
+  nameWithType: PageSlider.AddPage(RectTransform)
+  fullName: TS.PageSlider.PageSlider.AddPage(RectTransform)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageSlider.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: AddPage
+    path: ../Assets/PageSlider/Scripts/PageSlider.cs
+    startLine: 84
+  namespace: TS.PageSlider
+  summary: >-
+    Adds a new page to the PageSlider. 
+
+    The content argument specifies the RectTransform of the content to be displayed on the new page.
+  example: []
+  syntax:
+    content: public void AddPage(RectTransform content)
+    parameters:
+    - id: content
+      type: RectTransform
+      description: The RectTransform of the content to be displayed on the new page.
+    content.vb: Public Sub AddPage(content As RectTransform)
+  overload: TS.PageSlider.PageSlider.AddPage*
+- uid: TS.PageSlider.PageSlider.Clear
+  commentId: M:TS.PageSlider.PageSlider.Clear
+  id: Clear
+  parent: TS.PageSlider.PageSlider
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: PageSlider.Clear()
+  fullName: TS.PageSlider.PageSlider.Clear()
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageSlider.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: Clear
+    path: ../Assets/PageSlider/Scripts/PageSlider.cs
+    startLine: 138
+  namespace: TS.PageSlider
+  summary: Removes all pages from the PageSlider and clears the associated PageDotsIndicator (if exists).
+  example: []
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: TS.PageSlider.PageSlider.Clear*
+references:
+- uid: TS.PageSlider
+  commentId: N:TS.PageSlider
+  href: TS.html
+  name: TS.PageSlider
+  nameWithType: TS.PageSlider
+  fullName: TS.PageSlider
+  spec.csharp:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+  spec.vb:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+- uid: UnityEvent{TS.PageSlider.PageContainer}
+  commentId: '!:UnityEvent{TS.PageSlider.PageContainer}'
+  definition: UnityEvent`1
+  href: TS.PageSlider.PageContainer.html
+  name: UnityEvent<PageContainer>
+  nameWithType: UnityEvent<PageContainer>
+  fullName: UnityEvent<TS.PageSlider.PageContainer>
+  nameWithType.vb: UnityEvent(Of PageContainer)
+  fullName.vb: UnityEvent(Of TS.PageSlider.PageContainer)
+  name.vb: UnityEvent(Of PageContainer)
+  spec.csharp:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: TS.PageSlider.PageContainer
+    name: PageContainer
+    href: TS.PageSlider.PageContainer.html
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: TS.PageSlider.PageContainer
+    name: PageContainer
+    href: TS.PageSlider.PageContainer.html
+  - name: )
+- uid: UnityEvent`1
+  isExternal: true
+  name: UnityEvent<>
+  nameWithType: UnityEvent<>
+  fullName: UnityEvent<>
+  nameWithType.vb: UnityEvent(Of )
+  fullName.vb: UnityEvent(Of )
+  name.vb: UnityEvent(Of )
+  spec.csharp:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`1
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: )
+- uid: TS.PageSlider.PageSlider.Rect*
+  commentId: Overload:TS.PageSlider.PageSlider.Rect
+  href: TS.PageSlider.PageSlider.html#TS_PageSlider_PageSlider_Rect
+  name: Rect
+  nameWithType: PageSlider.Rect
+  fullName: TS.PageSlider.PageSlider.Rect
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: TS.PageSlider.PageSlider.AddPage*
+  commentId: Overload:TS.PageSlider.PageSlider.AddPage
+  href: TS.PageSlider.PageSlider.html#TS_PageSlider_PageSlider_AddPage_RectTransform_
+  name: AddPage
+  nameWithType: PageSlider.AddPage
+  fullName: TS.PageSlider.PageSlider.AddPage
+- uid: RectTransform
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: TS.PageSlider.PageSlider.Clear*
+  commentId: Overload:TS.PageSlider.PageSlider.Clear
+  href: TS.PageSlider.PageSlider.html#TS_PageSlider_PageSlider_Clear
+  name: Clear
+  nameWithType: PageSlider.Clear
+  fullName: TS.PageSlider.PageSlider.Clear
