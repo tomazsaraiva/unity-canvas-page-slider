@@ -16,8 +16,22 @@ namespace TS.PageSlider
 
         [Header("Configuration")]
 
+        /// <summary>
+        /// Determines whether it should change the Image component color on state changes
+        /// </summary>
+        [Tooltip("Determines whether it should change the Image component color on state changes")]
         [SerializeField] private bool _useImageComponent;
+
+        /// <summary>
+        /// Specifies the default color used when the page dot is unselected.
+        /// </summary>
+        [Tooltip("Specifies the default color used when the page dot is unselected")]
         [SerializeField] private Color _defaultColor;
+
+        /// <summary>
+        /// Specifies the default color used when the page dot is selected.
+        /// </summary>
+        [Tooltip("Specifies the default color used when the page dot is selected")]
         [SerializeField] private Color _selectedColor;
 
 
