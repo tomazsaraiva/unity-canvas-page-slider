@@ -1,6 +1,7 @@
 #region Includes
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.UI;
 #endregion
 
 namespace TS.PageSlider
@@ -12,6 +13,13 @@ namespace TS.PageSlider
     public class PageDot : MonoBehaviour
     {
         #region Variables
+
+        [Header("Configuration")]
+
+        [SerializeField] private bool _useImageComponent;
+        [SerializeField] private Color _defaultColor;
+        [SerializeField] private Color _selectedColor;
+
 
         [Header("Events")]
 
@@ -39,8 +47,17 @@ namespace TS.PageSlider
         /// </summary>
         public int Index { get; set; }
 
+        private Image _image;
+
         #endregion
 
+        private void Awake()
+        {
+            if (_useImageComponent && !TryGetComponent(out _image))
+            {
+                Debug.LogError("No Image Component found");
+            }
+        }
         private void Start()
         {
             // HACK: Ideally the dot shouldn't change it's state.
@@ -56,6 +73,11 @@ namespace TS.PageSlider
         public virtual void ChangeActiveState(bool active)
         {
             IsActive = active;
+
+            if (_useImageComponent && _image != null)
+            {
+                _image.color = active ? _selectedColor : _defaultColor;
+            }
 
             OnActiveStateChanged?.Invoke(active);
         }
