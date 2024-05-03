@@ -25,7 +25,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: PageDot
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 11
+    startLine: 12
   namespace: TS.PageSlider
   summary: >-
     This class represents a single dot indicator used for navigation in a paginated view.
@@ -55,7 +55,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: OnActiveStateChanged
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 22
+    startLine: 44
   namespace: TS.PageSlider
   syntax:
     content: public UnityEvent<bool> OnActiveStateChanged
@@ -80,7 +80,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: OnPressed
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 29
+    startLine: 51
   namespace: TS.PageSlider
   summary: >-
     UnityEvent with an integer parameter that is invoked when the dot is pressed.
@@ -110,7 +110,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: IsActive
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 34
+    startLine: 56
   namespace: TS.PageSlider
   summary: Gets the active state of the page dot.
   example: []
@@ -139,7 +139,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: Index
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 39
+    startLine: 61
   namespace: TS.PageSlider
   summary: Gets or sets the index of the page dot within the paginated view.
   example: []
@@ -168,7 +168,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: ChangeActiveState
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 55
+    startLine: 86
   namespace: TS.PageSlider
   summary: Changes the active state of the page dot and invokes the OnActiveStateChanged event.
   example: []
@@ -201,7 +201,7 @@ items:
       repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
     id: Press
     path: ../Assets/PageSlider/Scripts/PageDot.cs
-    startLine: 65
+    startLine: 101
   namespace: TS.PageSlider
   summary: Invokes the OnPressed event with the dot's index when the dot is pressed.
   example: []
