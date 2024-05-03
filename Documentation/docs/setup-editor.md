@@ -1,6 +1,8 @@
-# How to build a Page Slider in the Editor
+# Using Predefined Content
 
-This guide walks you through creating a Page Slider in the Unity Editor.
+This guide walks you through creating a Page Slider with a predefined set of pages and content.
+
+> [!Video https://www.youtube.com/watch?v=FKAQVJ91ioI]
 
 ## 1. Add the Page Slider
 
@@ -37,3 +39,12 @@ This guide walks you through creating a Page Slider in the Unity Editor.
 ![Configure the page view with UI elements](../images/setup_add_page_view_layout.png)
 
 5. Repeat the previous steps to add more pages.
+
+## Helpful links
+
+- Understand the main concepts by reading the [getting started guide](./getting-started.md)
+- For a more in-depth explanation, check out this [video](https://youtu.be/Z3K6qApmTsY).
+- Explore the [API Reference](../api/TS.PageSlider.PageSlider.html) for more details.
+- Modify the source code available on [GitHub](https://github.com/tomazsaraiva/unity-canvas-page-slider).
+- Install directly from the [Unity Asset Store](TODO).
+- Get in touch with me at [tomazsaraiva.com](https://tomazsaraiva.com).

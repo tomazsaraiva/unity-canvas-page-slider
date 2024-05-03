@@ -1,6 +1,7 @@
-- name: Getting Started
-  href: getting-started.md
-- name: Setup (Editor)
-  href: setup-editor.md
-- name: Setup (Runtime)
-  href: setup-runtime.md
+items:
+  - name: Getting Started
+    href: getting-started.md
+  - name: Setup
+    items:
+      - href: setup-editor.md
+      - href: setup-runtime.md

@@ -13,10 +13,10 @@
 
 ## Setup
 
-You can build your pages directly in the editor or dynamically at runtime. Check the following guides:
+You can create a Page Slider in two ways: either with a predefined set of pages and content, or by loading content dynamically into the slider at runtime. Check the following guides for step-by-step tutorials:
 
-- [How to build a Page Slider in the Editor](./setup-editor.md)
-- [How to build a Page Slider at runtime](./setup-runtime.md)
+- [Using Predefined Content](./setup-editor.md)
+- [Implementing Dynamic Content](./setup-runtime.md)
 
 ## Helpful links
 
