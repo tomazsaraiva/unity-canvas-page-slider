@@ -1,0 +1,75 @@
+name: Generate documentation
+
+on:
+  push:
+    branches:
+      - master
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+    actions: read
+    pages: write
+    id-token: write
+    contents: write
+    repository-projects: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+    group: "pages"
+    cancel-in-progress: false
+    
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Generate Documentation
+        uses: nunit/docfx-action@v2.4.0
+        with:
+            args: Documentation/docfx.json
+        
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3.6.1
+        with:
+            github_token: ${{ secrets.GITHUB_TOKEN }}
+            publish_dir: ./Documentation/_site
+
+#   build:
+#     runs-on: windows-latest
+#     steps:
+#         - name: Checkout
+#           uses: actions/checkout@v3
+
+#         - name: Update DocFX
+#           run: dotnet tool update -g docfx
+
+#         - name: Build documentation
+#           run: docfx Documentation/docfx.json
+
+#         - name: Upload artifact
+#           uses: actions/upload-artifact@v3
+#           with:
+#             name: _site
+#             path: Documentation/_site/
+#             if-no-files-found: error
+
+#   deploy:
+#     needs: build
+#     runs-on: ubuntu-latest
+#     steps:
+#     - name: Checkout
+#       uses: actions/checkout@v3
+
+#     - name: Download artifact
+#       uses: actions/download-artifact/@v3
+#       with: 
+#         name: _site
+        
+#     - name: Deploy
+#       uses: peaceiris/actions-gh-pages@v3
+#       with:
+#         github_token: ${{ secrets.GITHUB_TOKEN }}
+#         publish_branch: gh-pages

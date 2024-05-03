@@ -1,0 +1,50 @@
+{
+    "metadata": [
+        {
+            "src": [
+                {
+                    "src": "../Assets/PageSlider/",
+                    "files": [
+                        "**/*.cs"
+                    ]
+                }
+            ],
+            "dest": "api",
+            "allowCompilationErrors": true
+        }
+    ],
+    "build": {
+        "content": [
+            {
+                "files": [
+                    "**/*.{md,yml}"
+                ],
+                "exclude": [
+                    "_site/**"
+                ]
+            }
+        ],
+        "resource": [
+            {
+                "files": [
+                    "images/**"
+                ]
+            }
+        ],
+        "dest": "_site",
+        "template": [
+            "default",
+            "unity"
+        ],
+        "globalMetadata": {
+            "_appName": "Unity Page Slider",
+            "_appTitle": "Unity Page Slider",
+            "_appLogoPath": "images/logo.svg",
+            "_appFaviconPath": "images/favicon.ico",
+            "_enableSearch": true,
+            "_enableNewTab": true,
+            "_disableContribution": true,
+            "pdf": true
+        }
+    }
+}

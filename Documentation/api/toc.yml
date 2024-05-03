@@ -1,0 +1,18 @@
+### YamlMime:TableOfContent
+items:
+- uid: TS.PageSlider
+  name: TS.PageSlider
+  items:
+  - uid: TS.PageSlider.PageContainer
+    name: PageContainer
+  - uid: TS.PageSlider.PageDot
+    name: PageDot
+  - uid: TS.PageSlider.PageDotsIndicator
+    name: PageDotsIndicator
+  - uid: TS.PageSlider.PageScroller
+    name: PageScroller
+  - uid: TS.PageSlider.PageSlider
+    name: PageSlider
+  - uid: TS.PageSlider.PageView
+    name: PageView
+memberLayout: SamePage

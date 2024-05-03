@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: TS.PageSlider.PageScroller
+  commentId: T:TS.PageSlider.PageScroller
+  id: PageScroller
+  parent: TS.PageSlider
+  children:
+  - TS.PageSlider.PageScroller.Content
+  - TS.PageSlider.PageScroller.OnBeginDrag(PointerEventData)
+  - TS.PageSlider.PageScroller.OnEndDrag(PointerEventData)
+  - TS.PageSlider.PageScroller.OnPageChangeEnded
+  - TS.PageSlider.PageScroller.OnPageChangeStarted
+  - TS.PageSlider.PageScroller.Rect
+  - TS.PageSlider.PageScroller.SetPage(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: PageScroller
+  nameWithType: PageScroller
+  fullName: TS.PageSlider.PageScroller
+  type: Class
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: PageScroller
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 13
+  namespace: TS.PageSlider
+  summary: >-
+    The PageScroller class manages scrolling within a PageSlider component. 
+
+    It handles user interaction for swiping between pages and snapping to the closest page on release.
+  example: []
+  syntax:
+    content: 'public class PageScroller : MonoBehaviour, IBeginDragHandler, IEndDragHandler'
+    content.vb: Public Class PageScroller Inherits MonoBehaviour Implements IBeginDragHandler, IEndDragHandler
+  inheritance:
+  - System.Object
+  implements:
+  - IBeginDragHandler
+  - IEndDragHandler
+- uid: TS.PageSlider.PageScroller.OnPageChangeStarted
+  commentId: F:TS.PageSlider.PageScroller.OnPageChangeStarted
+  id: OnPageChangeStarted
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: OnPageChangeStarted
+  nameWithType: PageScroller.OnPageChangeStarted
+  fullName: TS.PageSlider.PageScroller.OnPageChangeStarted
+  type: Field
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: OnPageChangeStarted
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 38
+  namespace: TS.PageSlider
+  syntax:
+    content: public UnityEvent<int, int> OnPageChangeStarted
+    return:
+      type: UnityEvent{System.Int32,System.Int32}
+    content.vb: Public OnPageChangeStarted As UnityEvent(Of Integer, Integer)
+- uid: TS.PageSlider.PageScroller.OnPageChangeEnded
+  commentId: F:TS.PageSlider.PageScroller.OnPageChangeEnded
+  id: OnPageChangeEnded
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: OnPageChangeEnded
+  nameWithType: PageScroller.OnPageChangeEnded
+  fullName: TS.PageSlider.PageScroller.OnPageChangeEnded
+  type: Field
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: OnPageChangeEnded
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 45
+  namespace: TS.PageSlider
+  summary: >-
+    Event triggered when a page change ends. 
+
+    The event arguments are the index of the current page and the index of the new active page.
+  example: []
+  syntax:
+    content: public UnityEvent<int, int> OnPageChangeEnded
+    return:
+      type: UnityEvent{System.Int32,System.Int32}
+    content.vb: Public OnPageChangeEnded As UnityEvent(Of Integer, Integer)
+- uid: TS.PageSlider.PageScroller.Rect
+  commentId: P:TS.PageSlider.PageScroller.Rect
+  id: Rect
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: Rect
+  nameWithType: PageScroller.Rect
+  fullName: TS.PageSlider.PageScroller.Rect
+  type: Property
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: Rect
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 50
+  namespace: TS.PageSlider
+  summary: Gets the rectangle of the ScrollRect component used for scrolling.
+  example: []
+  syntax:
+    content: public Rect Rect { get; }
+    parameters: []
+    return:
+      type: Rect
+    content.vb: Public ReadOnly Property Rect As Rect
+  overload: TS.PageSlider.PageScroller.Rect*
+- uid: TS.PageSlider.PageScroller.Content
+  commentId: P:TS.PageSlider.PageScroller.Content
+  id: Content
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: Content
+  nameWithType: PageScroller.Content
+  fullName: TS.PageSlider.PageScroller.Content
+  type: Property
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: Content
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 67
+  namespace: TS.PageSlider
+  summary: Gets the RectTransform of the content being scrolled within the ScrollRect.
+  example: []
+  syntax:
+    content: public RectTransform Content { get; }
+    parameters: []
+    return:
+      type: RectTransform
+    content.vb: Public ReadOnly Property Content As RectTransform
+  overload: TS.PageSlider.PageScroller.Content*
+- uid: TS.PageSlider.PageScroller.SetPage(System.Int32)
+  commentId: M:TS.PageSlider.PageScroller.SetPage(System.Int32)
+  id: SetPage(System.Int32)
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: SetPage(int)
+  nameWithType: PageScroller.SetPage(int)
+  fullName: TS.PageSlider.PageScroller.SetPage(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: SetPage
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 132
+  namespace: TS.PageSlider
+  syntax:
+    content: public void SetPage(int index)
+    parameters:
+    - id: index
+      type: System.Int32
+    content.vb: Public Sub SetPage(index As Integer)
+  overload: TS.PageSlider.PageScroller.SetPage*
+  nameWithType.vb: PageScroller.SetPage(Integer)
+  fullName.vb: TS.PageSlider.PageScroller.SetPage(Integer)
+  name.vb: SetPage(Integer)
+- uid: TS.PageSlider.PageScroller.OnBeginDrag(PointerEventData)
+  commentId: M:TS.PageSlider.PageScroller.OnBeginDrag(PointerEventData)
+  id: OnBeginDrag(PointerEventData)
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: OnBeginDrag(PointerEventData)
+  nameWithType: PageScroller.OnBeginDrag(PointerEventData)
+  fullName: TS.PageSlider.PageScroller.OnBeginDrag(PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: OnBeginDrag
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 141
+  namespace: TS.PageSlider
+  syntax:
+    content: public void OnBeginDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnBeginDrag(eventData As PointerEventData)
+  overload: TS.PageSlider.PageScroller.OnBeginDrag*
+- uid: TS.PageSlider.PageScroller.OnEndDrag(PointerEventData)
+  commentId: M:TS.PageSlider.PageScroller.OnEndDrag(PointerEventData)
+  id: OnEndDrag(PointerEventData)
+  parent: TS.PageSlider.PageScroller
+  langs:
+  - csharp
+  - vb
+  name: OnEndDrag(PointerEventData)
+  nameWithType: PageScroller.OnEndDrag(PointerEventData)
+  fullName: TS.PageSlider.PageScroller.OnEndDrag(PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/PageSlider/Scripts/PageScroller.cs
+      branch: develop
+      repo: https://github.com/tomazsaraiva/unity-canvas-page-viewer.git
+    id: OnEndDrag
+    path: ../Assets/PageSlider/Scripts/PageScroller.cs
+    startLine: 166
+  namespace: TS.PageSlider
+  syntax:
+    content: public void OnEndDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: PointerEventData
+    content.vb: Public Sub OnEndDrag(eventData As PointerEventData)
+  overload: TS.PageSlider.PageScroller.OnEndDrag*
+references:
+- uid: TS.PageSlider
+  commentId: N:TS.PageSlider
+  href: TS.html
+  name: TS.PageSlider
+  nameWithType: TS.PageSlider
+  fullName: TS.PageSlider
+  spec.csharp:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+  spec.vb:
+  - uid: TS
+    name: TS
+    href: TS.html
+  - name: .
+  - uid: TS.PageSlider
+    name: PageSlider
+    href: TS.PageSlider.html
+- uid: IBeginDragHandler
+  commentId: '!:IBeginDragHandler'
+  isExternal: true
+  name: IBeginDragHandler
+  nameWithType: IBeginDragHandler
+  fullName: IBeginDragHandler
+- uid: IEndDragHandler
+  commentId: '!:IEndDragHandler'
+  isExternal: true
+  name: IEndDragHandler
+  nameWithType: IEndDragHandler
+  fullName: IEndDragHandler
+- uid: UnityEvent{System.Int32,System.Int32}
+  commentId: '!:UnityEvent{System.Int32,System.Int32}'
+  definition: UnityEvent`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: UnityEvent<int, int>
+  nameWithType: UnityEvent<int, int>
+  fullName: UnityEvent<int, int>
+  nameWithType.vb: UnityEvent(Of Integer, Integer)
+  fullName.vb: UnityEvent(Of Integer, Integer)
+  name.vb: UnityEvent(Of Integer, Integer)
+  spec.csharp:
+  - uid: UnityEvent`2
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`2
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UnityEvent`2
+  isExternal: true
+  name: UnityEvent<, >
+  nameWithType: UnityEvent<, >
+  fullName: UnityEvent<, >
+  nameWithType.vb: UnityEvent(Of , )
+  fullName.vb: UnityEvent(Of , )
+  name.vb: UnityEvent(Of , )
+  spec.csharp:
+  - uid: UnityEvent`2
+    name: UnityEvent
+    isExternal: true
+  - name: <
+  - name: ''
+  - name: ','
+  - name: " "
+  - name: ''
+  - name: '>'
+  spec.vb:
+  - uid: UnityEvent`2
+    name: UnityEvent
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: ''
+  - name: ','
+  - name: " "
+  - name: ''
+  - name: )
+- uid: TS.PageSlider.PageScroller.Rect*
+  commentId: Overload:TS.PageSlider.PageScroller.Rect
+  href: TS.PageSlider.PageScroller.html#TS_PageSlider_PageScroller_Rect
+  name: Rect
+  nameWithType: PageScroller.Rect
+  fullName: TS.PageSlider.PageScroller.Rect
+- uid: Rect
+  isExternal: true
+  name: Rect
+  nameWithType: Rect
+  fullName: Rect
+- uid: TS.PageSlider.PageScroller.Content*
+  commentId: Overload:TS.PageSlider.PageScroller.Content
+  href: TS.PageSlider.PageScroller.html#TS_PageSlider_PageScroller_Content
+  name: Content
+  nameWithType: PageScroller.Content
+  fullName: TS.PageSlider.PageScroller.Content
+- uid: RectTransform
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: RectTransform
+- uid: TS.PageSlider.PageScroller.SetPage*
+  commentId: Overload:TS.PageSlider.PageScroller.SetPage
+  href: TS.PageSlider.PageScroller.html#TS_PageSlider_PageScroller_SetPage_System_Int32_
+  name: SetPage
+  nameWithType: PageScroller.SetPage
+  fullName: TS.PageSlider.PageScroller.SetPage
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TS.PageSlider.PageScroller.OnBeginDrag*
+  commentId: Overload:TS.PageSlider.PageScroller.OnBeginDrag
+  href: TS.PageSlider.PageScroller.html#TS_PageSlider_PageScroller_OnBeginDrag_PointerEventData_
+  name: OnBeginDrag
+  nameWithType: PageScroller.OnBeginDrag
+  fullName: TS.PageSlider.PageScroller.OnBeginDrag
+- uid: PointerEventData
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: PointerEventData
+- uid: TS.PageSlider.PageScroller.OnEndDrag*
+  commentId: Overload:TS.PageSlider.PageScroller.OnEndDrag
+  href: TS.PageSlider.PageScroller.html#TS_PageSlider_PageScroller_OnEndDrag_PointerEventData_
+  name: OnEndDrag
+  nameWithType: PageScroller.OnEndDrag
+  fullName: TS.PageSlider.PageScroller.OnEndDrag

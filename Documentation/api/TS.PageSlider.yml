@@ -1,0 +1,56 @@
+### YamlMime:ManagedReference
+items:
+- uid: TS.PageSlider
+  commentId: N:TS.PageSlider
+  id: TS.PageSlider
+  children:
+  - TS.PageSlider.PageContainer
+  - TS.PageSlider.PageDot
+  - TS.PageSlider.PageDotsIndicator
+  - TS.PageSlider.PageScroller
+  - TS.PageSlider.PageSlider
+  - TS.PageSlider.PageView
+  langs:
+  - csharp
+  - vb
+  name: TS.PageSlider
+  nameWithType: TS.PageSlider
+  fullName: TS.PageSlider
+  type: Namespace
+references:
+- uid: TS.PageSlider.PageContainer
+  commentId: T:TS.PageSlider.PageContainer
+  href: TS.PageSlider.PageContainer.html
+  name: PageContainer
+  nameWithType: PageContainer
+  fullName: TS.PageSlider.PageContainer
+- uid: TS.PageSlider.PageDot
+  commentId: T:TS.PageSlider.PageDot
+  href: TS.PageSlider.PageDot.html
+  name: PageDot
+  nameWithType: PageDot
+  fullName: TS.PageSlider.PageDot
+- uid: TS.PageSlider.PageDotsIndicator
+  commentId: T:TS.PageSlider.PageDotsIndicator
+  href: TS.PageSlider.PageDotsIndicator.html
+  name: PageDotsIndicator
+  nameWithType: PageDotsIndicator
+  fullName: TS.PageSlider.PageDotsIndicator
+- uid: TS.PageSlider.PageScroller
+  commentId: T:TS.PageSlider.PageScroller
+  href: TS.PageSlider.PageScroller.html
+  name: PageScroller
+  nameWithType: PageScroller
+  fullName: TS.PageSlider.PageScroller
+- uid: TS.PageSlider.PageSlider
+  commentId: T:TS.PageSlider.PageSlider
+  href: TS.PageSlider.PageSlider.html
+  name: PageSlider
+  nameWithType: PageSlider
+  fullName: TS.PageSlider.PageSlider
+- uid: TS.PageSlider.PageView
+  commentId: T:TS.PageSlider.PageView
+  href: TS.PageSlider.PageView.html
+  name: PageView
+  nameWithType: PageView
+  fullName: TS.PageSlider.PageView

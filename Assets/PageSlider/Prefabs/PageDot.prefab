@@ -89,6 +89,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf002eaa449ee6d438ace2cb3e9b583f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _useImageComponent: 1
+  _defaultColor: {r: 0.22745098, g: 0.22745098, b: 0.22745098, a: 1}
+  _selectedColor: {r: 1, g: 1, b: 1, a: 1}
   OnActiveStateChanged:
     m_PersistentCalls:
       m_Calls: []
