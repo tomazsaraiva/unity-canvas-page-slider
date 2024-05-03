@@ -2,7 +2,7 @@
 
 This guide walks you through creating a Page Slider with a predefined set of pages and content.
 
-> [!Video https://www.youtube.com/watch?v=FKAQVJ91ioI]
+> [!Video https://www.youtube.com/embed/FKAQVJ91ioI]
 
 ## 1. Add the Page Slider
 

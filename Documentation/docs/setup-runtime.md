@@ -2,6 +2,8 @@
 
 This tutorial explores loading content dynamically into your Page Slider at runtime, allowing for greater control and adaptability.
 
+> [!Video https://www.youtube.com/embed/wgaB6tNl7zg]
+
 ## 1. Add the Page Slider
 
 1. Create a new `Canvas` GameObject.
@@ -79,3 +81,12 @@ public class PageSliderDemo : MonoBehaviour
 6. Run the project and the pages will be added dynamically to the `PageSlider`.
 
 **Note:** For more complex cases you should create a custom class for the page layout. Check the `Demo_Dynamic` and `Demo_Lazy` available on the [GitHub repository](https://github.com/tomazsaraiva/unity-canvas-page-slider).
+
+## Helpful links
+
+- Understand the main concepts by reading the [getting started guide](./getting-started.md)
+- For a more in-depth explanation, check out this [video](https://youtu.be/Z3K6qApmTsY).
+- Explore the [API Reference](../api/TS.PageSlider.PageSlider.html) for more details.
+- Modify the source code available on [GitHub](https://github.com/tomazsaraiva/unity-canvas-page-slider).
+- Install directly from the [Unity Asset Store](TODO).
+- Get in touch with me at [tomazsaraiva.com](https://tomazsaraiva.com).
