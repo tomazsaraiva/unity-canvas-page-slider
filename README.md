@@ -12,7 +12,7 @@ The Unity Page Slider is a Canvas Component that lets you easily create scrollab
 
 ## Helpful links
 
-- Follow the [Getting Started](docs/getting-started.html) guide to get up and running.
-- Explore the [API Reference](api/TS.PageSlider.html) for more details.
+- Follow the [Getting Started](https://tomazsaraiva.github.io/unity-canvas-page-slider/docs/getting-started.html) guide to get up and running.
+- Explore the [API Reference](https://tomazsaraiva.github.io/unity-canvas-page-slider/api/TS.PageSlider.html) for more details.
 - Install directly from the [Unity Asset Store](TODO).
 - Get in touch with me at [tomazsaraiva.com](https://tomazsaraiva.com).
