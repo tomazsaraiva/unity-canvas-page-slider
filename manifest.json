@@ -1,0 +1,316 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageContainer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageContainer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageDot.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageDot.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageDotsIndicator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageDotsIndicator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageScroller.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageScroller.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.PageView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.PageView.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TS.PageSlider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TS.PageSlider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "docs/setup-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/setup-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "docs/setup-runtime.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/setup-runtime.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "EmptyTocItemName"
+      ],
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "images/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "images/logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_page.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_page.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_page_layout_dynamic.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_page_layout_dynamic.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_page_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_page_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_page_view_layout.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_page_view_layout.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_pagedotsindicator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_pagedotsindicator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_add_pageslider.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_add_pageslider.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_assign_pagedotsindicator.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_assign_pagedotsindicator.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_dynamic_add_page_view_layout.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_dynamic_add_page_view_layout.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_dynamic_assign_references.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_dynamic_assign_references.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_dynamic_create_page_view.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_dynamic_create_page_view.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_dynamic_create_prefab.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_dynamic_create_prefab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/setup_dynamic_create_script.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/setup_dynamic_create_script.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

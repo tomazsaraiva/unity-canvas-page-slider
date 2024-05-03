@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class PageContainer
+ | Unity Page Slider </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class PageContainer
+ | Unity Page Slider ">
+    
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Unity Page Slider">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TS.PageSlider.PageContainer">
+
+
+
+  <h1 id="TS_PageSlider_PageContainer" data-uid="TS.PageSlider.PageContainer" class="text-break">Class PageContainer
+</h1>
+  <div class="markdown level0 summary"><p>This class represents a container for a page in a paginated view.
+It handles assigning content to the container and manages the active state of the contained page.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PageContainer</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TS.html">TS</a>.<a class="xref" href="TS.PageSlider.html">PageSlider</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="TS_PageSlider_PageContainer_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PageContainer : MonoBehaviour</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+  <a id="TS_PageSlider_PageContainer_AssignContent_" data-uid="TS.PageSlider.PageContainer.AssignContent*"></a>
+  <h4 id="TS_PageSlider_PageContainer_AssignContent_RectTransform_" data-uid="TS.PageSlider.PageContainer.AssignContent(RectTransform)">AssignContent(RectTransform)</h4>
+  <div class="markdown level1 summary"><p>Assigns content (RectTransform) to this container.
+If no content is provided, it creates a new GameObject with a RectTransform and a PageView component.
+The assigned content is then parented to this container and its properties are set to ensure proper positioning and scaling.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AssignContent(RectTransform content)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">RectTransform</span></td>
+        <td><span class="parametername">content</span></td>
+        <td><p>The RectTransform representing the content to be assigned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="TS_PageSlider_PageContainer_ChangeActiveState_" data-uid="TS.PageSlider.PageContainer.ChangeActiveState*"></a>
+  <h4 id="TS_PageSlider_PageContainer_ChangeActiveState_System_Boolean_" data-uid="TS.PageSlider.PageContainer.ChangeActiveState(System.Boolean)">ChangeActiveState(bool)</h4>
+  <div class="markdown level1 summary"><p>Calls the ChangeActiveState method on the contained PageView component with the provided active state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangeActiveState(bool active)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">active</span></td>
+        <td><p>True to set the page to active, False to set it to inactive.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <a id="TS_PageSlider_PageContainer_ChangingToActiveState_" data-uid="TS.PageSlider.PageContainer.ChangingToActiveState*"></a>
+  <h4 id="TS_PageSlider_PageContainer_ChangingToActiveState" data-uid="TS.PageSlider.PageContainer.ChangingToActiveState">ChangingToActiveState()</h4>
+  <div class="markdown level1 summary"><p>Calls the ChangingToActiveState method on the contained PageView component,
+to signal a transition to an active state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangingToActiveState()</code></pre>
+  </div>
+  <a id="TS_PageSlider_PageContainer_ChangingToInactiveState_" data-uid="TS.PageSlider.PageContainer.ChangingToInactiveState*"></a>
+  <h4 id="TS_PageSlider_PageContainer_ChangingToInactiveState" data-uid="TS.PageSlider.PageContainer.ChangingToInactiveState">ChangingToInactiveState()</h4>
+  <div class="markdown level1 summary"><p>Calls the ChangingToInactiveState method on the contained PageView component,
+to signal a transition to an inactive state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ChangingToInactiveState()</code></pre>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

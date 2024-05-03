@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Using Predefined Content | Unity Page Slider </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Using Predefined Content | Unity Page Slider ">
+    
+      <link rel="shortcut icon" href="../images/favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../images/logo.svg" alt="Unity Page Slider">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="using-predefined-content">Using Predefined Content</h1>
+
+<p>This guide walks you through creating a Page Slider with a predefined set of pages and content.</p>
+<div class="embeddedvideo"><iframe src="https://www.youtube-nocookie.com/embed/FKAQVJ91ioI" frameborder="0" allowfullscreen="true"></iframe></div>
+<h2 id="1-add-the-page-slider">1. Add the Page Slider</h2>
+<ol>
+<li>Create a new <code>Canvas</code> GameObject.</li>
+<li>In the Project window, locate the <code>PageSlider</code> prefab within your project's folder structure: <code>PageSlider/Prefabs/</code>.</li>
+<li>Drag the <code>PageSlider</code> prefab from the Project window and make it a child of the <code>Canvas</code> in the Hierarchy.</li>
+</ol>
+<p><img src="../images/setup_add_pageslider.png" alt="Drag a PageSlider prefab as a child of the Canvas"></p>
+<h2 id="2-optional-add-page-dots-indicator">2. (Optional) Add Page Dots Indicator</h2>
+<ol>
+<li>In the Project window, locate the <code>PageDotsIndicator</code> prefab within your project's folder structure: <code>PageSlider/Prefabs/</code>.</li>
+<li>Drag the <code>PageDotsIndicator</code> prefab and make it a child of the <code>PageSlider</code> in the Hierarchy.</li>
+</ol>
+<p><img src="../images/setup_add_pagedotsindicator.png" alt="Drag a PageDotsIndicator as a child of the PageSlider"></p>
+<ol start="3">
+<li>In the Inspector window, assign the <code>PageDotsIndicator</code> to the <code>Dots Indicator</code> field.</li>
+</ol>
+<p><img src="../images/setup_assign_pagedotsindicator.png" alt="Assign the PageDotsIndicator to the PageSlider"></p>
+<h2 id="3-add-a-new-page">3. Add a new Page</h2>
+<ol>
+<li>Select the <code>PageSlider</code> GameObject.</li>
+<li>Click the <code>Add Page</code> button in the Inspector window.</li>
+</ol>
+<p><img src="../images/setup_add_page.png" alt="Add a new page"></p>
+<ol start="3">
+<li>Expand the <code>PageSlider</code> hierarchy to locate the newly created <code>Page_X/Content</code> GameObject.</li>
+</ol>
+<p><img src="../images/setup_add_page_view.png" alt="Expand the PageSlider hierarchy"></p>
+<ol start="4">
+<li>Select the <code>Content</code> GameObject and add your desired UI elements to configure the page layout.</li>
+</ol>
+<p><img src="../images/setup_add_page_view_layout.png" alt="Configure the page view with UI elements"></p>
+<ol start="5">
+<li>Repeat the previous steps to add more pages.</li>
+</ol>
+<h2 id="helpful-links">Helpful links</h2>
+<ul>
+<li>Understand the main concepts by reading the <a href="getting-started.html">getting started guide</a></li>
+<li>For a more in-depth explanation, check out this <a href="https://youtu.be/Z3K6qApmTsY">video</a>.</li>
+<li>Explore the <a href="../api/TS.PageSlider.PageSlider.html">API Reference</a> for more details.</li>
+<li>Modify the source code available on <a href="https://github.com/tomazsaraiva/unity-canvas-page-slider">GitHub</a>.</li>
+<li>Install directly from the <a href="TODO">Unity Asset Store</a>.</li>
+<li>Get in touch with me at <a href="https://tomazsaraiva.com">tomazsaraiva.com</a>.</li>
+</ul>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      
+      <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
