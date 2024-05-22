@@ -450,12 +450,12 @@ MonoBehaviour:
   _slider: {fileID: 1519821911}
   _pagePrefab: {fileID: 814526006564363141, guid: 34a6a345d0600164fbba90f6a5737184, type: 3}
   _items:
-  - _text: Breaking Bad
-    _image: {fileID: 21300000, guid: 918b522726a5d6e4182ee2fe33d94931, type: 3}
-  - _text: The Sopranos
-    _image: {fileID: 21300000, guid: 52a7789434bd999429daa89b89b7c994, type: 3}
-  - _text: The Wire
-    _image: {fileID: 21300000, guid: 83ca76425d60e3a488e5b1c076e3b82c, type: 3}
+  - _text: Photo by Ben Neale on Unsplash
+    _image: {fileID: 21300000, guid: dc453f7ab7135d545904d3b311fb5d61, type: 3}
+  - _text: Photo by Olena Bohovyk on Unsplash
+    _image: {fileID: 21300000, guid: a356509b37a2f78478f4da8b7299f4b5, type: 3}
+  - _text: Photo by Lorenzo Herrera on Unsplash
+    _image: {fileID: 21300000, guid: 560e752b0135aa349b88a729a70bb032, type: 3}
 --- !u!1001 &2230961183580555040
 PrefabInstance:
   m_ObjectHideFlags: 0

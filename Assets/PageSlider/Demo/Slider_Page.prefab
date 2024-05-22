@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8912934061302681927}
   - component: {fileID: 4188147904629407771}
   m_Layer: 0
-  m_Name: Scrim
+  m_Name: Image_Scrim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: 8246328283518510348}
   - component: {fileID: 8246328283518510349}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Image_Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
