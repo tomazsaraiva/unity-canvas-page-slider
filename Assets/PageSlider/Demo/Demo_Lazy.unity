@@ -450,12 +450,12 @@ MonoBehaviour:
   _slider: {fileID: 1519821911}
   _pagePrefab: {fileID: 256388038058165246, guid: 2b5467668b887ad4990698a2c3cea31c, type: 3}
   _items:
-  - _text: Breaking Bad
-    _imageUrl: https://ntvb.tmsimg.com/assets/p8696131_b_h10_aa.jpg?w=1280&h=720
-  - _text: The Sopranos
-    _imageUrl: http://images1.resources.foxtel.com.au/store2/mount1/16/2/9b6v7.jpg
-  - _text: The Wire
-    _imageUrl: https://ntvb.tmsimg.com/assets/p7892928_b_h10_ab.jpg?w=960&h=540
+  - _text: Photo by Ben Neale on Unsplash
+    _imageUrl: https://images.unsplash.com/photo-1498736297812-3a08021f206f?q=80&w=2271&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - _text: Photo by Olena Bohovyk on Unsplash
+    _imageUrl: https://images.unsplash.com/photo-1606422699425-f7122890005f?q=80&w=2675&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  - _text: Photo by Lorenzo Herrera on Unsplash
+    _imageUrl: https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 --- !u!1001 &2230961183580555040
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -481,27 +481,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 512
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 300
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_LocalPosition.x
@@ -533,11 +533,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.6914
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2230961182348911478, guid: 8b42e8dea396a36498a64d514ba721c0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -588,10 +588,6 @@ PrefabInstance:
       propertyPath: m_Spacing
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 4962108537545997378, guid: 13282f0048258d84e9b95d38cadfb0fd, type: 3}
-      propertyPath: _prefab
-      value: 
-      objectReference: {fileID: 7378000813563961525, guid: cd64a780e7eb0c743acc5139ca14c2dc, type: 3}
     - target: {fileID: 4962108537545997378, guid: 13282f0048258d84e9b95d38cadfb0fd, type: 3}
       propertyPath: _dots.Array.data[0]
       value: 
