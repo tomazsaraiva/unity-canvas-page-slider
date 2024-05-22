@@ -3,7 +3,7 @@
         {
             "src": [
                 {
-                    "src": "../Assets/PageSlider/",
+                    "src": "../Assets/PageSlider/Scripts/",
                     "files": [
                         "**/*.cs"
                     ]
