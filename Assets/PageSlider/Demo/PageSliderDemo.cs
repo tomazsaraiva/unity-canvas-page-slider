@@ -24,7 +24,6 @@ namespace TS.PageSlider.Demo
             for (int i = 0; i < _items.Length; i++)
             {
                 var page = Instantiate(_pagePrefab);
-                page.Text = _items[i].Text;
                 page.Image = _items[i].Image;
 
                 _slider.AddPage((RectTransform)page.transform);
