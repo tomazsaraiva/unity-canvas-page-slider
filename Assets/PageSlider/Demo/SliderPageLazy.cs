@@ -1,8 +1,6 @@
 #region Includes
 using System.Collections;
 
-using TMPro;
-
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
@@ -16,13 +14,6 @@ namespace TS.PageSlider.Demo
 
         [Header("Children")]
         [SerializeField] private Image _image;
-        [SerializeField] private TextMeshProUGUI _label;
-
-        public string Text
-        {
-            get { return _label.text; }
-            set { _label.text = value; }
-        }
 
         public string ImageUrl { get; set; }
 
