@@ -46,5 +46,5 @@ This guide walks you through creating a Page Slider with a predefined set of pag
 - For a more in-depth explanation, check out this [video](https://youtu.be/Z3K6qApmTsY).
 - Explore the [API Reference](../api/TS.PageSlider.PageSlider.html) for more details.
 - Modify the source code available on [GitHub](https://github.com/tomazsaraiva/unity-canvas-page-slider).
-- Install directly from the [Unity Asset Store](TODO).
+- Install directly from the [Unity Asset Store](https://assetstore.unity.com/packages/tools/gui/page-slider-241341).
 - Get in touch with me at [tomazsaraiva.com](https://tomazsaraiva.com).
